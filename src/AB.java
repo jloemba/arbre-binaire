@@ -55,13 +55,13 @@ public class AB {
 	}
 		
 	
-	//Vérifie l'arbre est vide =>  OK
+	//Vérifie l'arbre est vide
 	public boolean estVide(){
 		if(this.getGauche() == null && this.getDroite() == null) return true;
 		else return false;
 	}
 	
-	//Compte le nombre de noeud  ==> OK
+	//Compte le nombre de noeud
 	public int taille(){
  		 int result = 0;
  	     if (this.getGauche()!= null) result += 1+this.getGauche().taille();
@@ -70,7 +70,7 @@ public class AB {
 	}
 	
 	
-	//Parcours préfixe => en cours
+	//Parcours préfixe
 	public String parcoursPrefixe(){
 		 String parcours = this.getRacine()+" ";
 	     if (this.getGauche()!=null) parcours += this.getGauche().parcoursPrefixe();
